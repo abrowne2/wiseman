@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/wise', function (req, res) {
   res.header('Cache-Control', 'no-cache');
-  res.json({text: wise, response_type: "in_channel"});
+  res.json({text: wise, response_type: "in_channel", node: NODE_ENV});
 });
 
 app.listen(process.env.PORT || 8080);
