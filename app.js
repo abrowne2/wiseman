@@ -8,7 +8,7 @@ var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-app.get('/wise?_=' + new Date().getTime(), function (req, res) {
+app.post('/wise', function (req, res) {
   res.send({text: wise, response_type: "in_channel"});
 });
 
