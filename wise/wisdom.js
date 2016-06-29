@@ -6,4 +6,4 @@ function fetchKnowledge() {
   return "A wise man once said,\n" + knowledge[Math.floor(Math.random()*knowledge.length)];
 }
 
-var exports = module.exports = fetchKnowledge();
+module.exports = fetchKnowledge();
