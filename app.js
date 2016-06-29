@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var wise = require('./wise/wisdom.js');
 var app = express();
 
-app.use(express.static(__dirname + '/public', { maxAge: 0}));
+app.use(express.static(__dirname + '/public', { etag: false}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
