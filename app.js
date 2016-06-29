@@ -8,8 +8,9 @@ var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-app.post('/wise', function (req, res) {
-  res.send({text: wise, response_type: "in_channel"});
+app.get('/wise', function (req, res) {
+  res.header('Cache-Control', false);
+  res.json({text: wise, response_type: "in_channel"});
 });
 
 app.listen(process.env.PORT || 8080);
