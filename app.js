@@ -10,7 +10,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/wise', function (req, res) {
   res.setHeader('Cache-Control', 'public, max-age=31557600');
-  res.header('Pragma', 'no-cache');
   res.json({text: wise, response_type: "in_channel"});
 });
 
