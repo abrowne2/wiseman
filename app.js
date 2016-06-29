@@ -8,14 +8,15 @@ var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-function nocache(req, res, next) {
+app.use(function(req, res, next) {
   res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
   res.header('Expires', '-1');
   res.header('Pragma', 'no-cache');
   next();
-}
+});
 
-app.get('/wise', nocache, function (req, res) {
+
+app.get('/wise', function (req, res) {
   res.json({text: wise, response_type: "in_channel"});
 });
 
