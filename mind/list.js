@@ -6,5 +6,5 @@ module.exports = [
   "A closed mouth gathers no feet.",
   "All would live long but none would be old.",
   "An apple a day keeps the doctor away, but an onion a day keeps everyone away.",
-  "It's better to s"
+  "It's better to see everything, than to see nothing at all."
 ]
