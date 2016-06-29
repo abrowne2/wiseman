@@ -3,10 +3,8 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var wise = require('./wise/wisdom.js');
-var app = express.createServer();
+var app = express();
 
-app.use(express.static(__dirname + '/public', { etag: false}));
-app.use(express.errorHandler());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
