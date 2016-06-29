@@ -1,12 +1,13 @@
-'use strict';
+//app.
 
 var express = require('express');
 var bodyParser = require('body-parser');
-var wise = require('./wise/wisdom.js');
+var wisd = require('./wise/wisdom');
 var app = express();
 
-app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.json());
+
 
 app.use(function(req, res, next) {
   res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
@@ -17,7 +18,8 @@ app.use(function(req, res, next) {
 
 
 app.get('/wise', function (req, res) {
-  res.json({text: wise, response_type: "in_channel"});
+  res.json({text: wisd.fetchKnowledge(), response_type: "in_channel"});
 });
+
 
 app.listen(process.env.PORT || 8080);

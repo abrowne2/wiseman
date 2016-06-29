@@ -3,7 +3,7 @@
     "node": "~4.2"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "node api.js",
     "monitor": "nodemon app.js",
     "deploy": "gcloud preview app deploy"
   },
