@@ -13,4 +13,4 @@ app.get('/wise?_=' + new Date().getTime(), function (req, res) {
   res.json({text: wise, response_type: "in_channel"});
 });
 
-app.listen(3000);
+app.listen(process.ENV.port || 8080);
