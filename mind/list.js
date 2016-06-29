@@ -6,5 +6,16 @@ module.exports = [
   "A closed mouth gathers no feet.",
   "All would live long but none would be old.",
   "An apple a day keeps the doctor away, but an onion a day keeps everyone away.",
-  "It's better to see everything, than to see nothing at all."
+  "To steal ideas from one person is plagiarism; to steal from many is research.",
+  "Borrow money from pessimists – they don’t expect it back.",
+  "A clear conscience is usually the sign of a bad memory.",
+  "42.7% of all statistics are made up on the spot.",
+  "Ambition is a poor excuse for not having enough sense to be lazy .",
+  "If at first you don’t succeed, destroy all evidence that you tried.",
+  "The sooner you fall behind, the more time you’ll have to catch up.",
+  "If Barbie is so popular, why do you have to buy her friends?",
+  "Everyone has a photographic memory; some just don’t have film.",
+  "If your car could travel at the speed of light, would your headlights work?",
+  "Hard work pays off in the future, laziness pays off now.",
+  "If you want the rainbow, you got to put up with the rain."
 ]
