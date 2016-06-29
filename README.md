@@ -7,6 +7,6 @@ Making a GET Request to https://wiseman-app.herokuapp.com/wise will return some 
 The API's location will at some point be migrated to a larger host, and more sayings will be added.
 
 When the app is made, it will look like this:
-![alt tag](wiseman/master/ex.png)
+![alt tag](/wiseman/master/ex.png)
 
 Feel free to fork this and add some more sayings.
