@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/wise', function (req, res) {
-  res.header('Cache-Control', 'no-cache,max-age=0,no-store,post-check=0,pre-check=0');
+  res.setHeader('Cache-Control', 'public, max-age=31557600');
   res.header('Pragma', 'no-cache');
   res.json({text: wise, response_type: "in_channel"});
 });
